@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Amazon Sign In</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        .signin-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .checkbox {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e59400;
+        }
+
+        .divider {
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .legal {
+            color: #888;
+            font-size: 12px;
+        }
+
+        
+        .logo {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; 
+        }
+
+        /*  Copyright Notice */
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-container">
+            <img src="img/phone_amazon-unsplash.jpg" alt="Logo" class="logo">
+
+            <h1>Sign-In</h1>
+            <form>
+                <label for="email">Email or mobile phone number</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Keep me signed in</label>
+                </div>
+
+                <button type="submit">Sign-In</button>
+            </form>
+
+            <div class="divider">
+                <span>New to Amazon?</span>
+            </div>
+
+            <a href="#">Create your Amazon account</a>
+
+            <p class="legal">By signing in, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy; 1996-2024, Amazon.com, Inc. or its affiliates
+    </div>
+</body>
+</html>
+
